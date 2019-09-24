@@ -1,3 +1,94 @@
-.html {
-    
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap');
+
+:root {
+  /*colors*/
+  --primary: #F61067;
+  --secondary-100: #5E239D;
+  --secondary-200: #3A0475;
+  --secondary-300: #30124E;
+  --secondary-400: #150433;
+
+  --tetrary: #00F0B5;
+  --tetrary-100: #6DECAF;
+  --white: #FCFCFC;
+  --light-grey: #F4F4ED;
+
+  --text-headers: #30233D;
+  --text-main: #776C82;
+  --text-grey: #9B94A3;
+  --error: #F0002B;
+  --success: #10F65E;
+  --warning: #F67110;
+  --info: #00A8F0;
+
+  /*shadows*/
+  --shadow-violet: 0px 8px 64px rgba(94, 35, 157, 0.25);
+  --shadow-green: 0px 8px 64px rgba(0, 240, 181, 0.25);
+  --shadow-pink: 0px 8px 64px rgba(246, 16, 103, 0.25);
+
+  /*headers*/
+  --h1-size: 99px;
+  --h2-size: 54px;
+  --h3-size: 45px;
+  --h4-size: 36px;
+  --h5-size: 27px;
+  --h6-size: 18px;
+
+  --h1-line: 118px;
+  --h1-line: 80px;
+  --h1-line: 67px;
+  --h1-line: 53px;
+  --h1-line: 40px;
+  --h1-line: 27px;
+
+  --h1-weight: 900;
+  --h2-weight: 500;
+
+
+  font-family: 'M PLUS 1p', sans-serif;
+  color: var(--text-headers);
+  font-size: 18px;
+  line-height: 20px;
 }
+
+html, body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  line-height: var(--h1-line);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-line);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-line);
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: var(--h4-weight);
+  line-height: var(--h4-line);
+}
+
+h5 {
+  font-size: var(--h5-size);
+  font-weight: var(--h5-weight);
+  line-height: var(--h5-line);
+}
+
+h6 {
+  font-size: var(--h6-size);
+  font-weight: var(--h6-weight);
+  line-height: var(--h6-line);
+}
+
