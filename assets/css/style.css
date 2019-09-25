@@ -35,11 +35,11 @@
   --h6-size: 18px;
 
   --h1-line: 118px;
-  --h1-line: 80px;
-  --h1-line: 67px;
-  --h1-line: 53px;
-  --h1-line: 40px;
-  --h1-line: 27px;
+  --h2-line: 80px;
+  --h3-line: 67px;
+  --h4-line: 53px;
+  --h5-line: 40px;
+  --h6-line: 27px;
 
   --h1-weight: 900;
   --h2-weight: 500;
@@ -48,7 +48,7 @@
   font-family: 'M PLUS 1p', sans-serif;
   color: var(--text-headers);
   font-size: 18px;
-  line-height: 20px;
+  line-height: 29px;
 }
 
 html, body, h1, h2, h3, h4, h5, h6 {
@@ -70,25 +70,225 @@ h2 {
 
 h3 {
   font-size: var(--h3-size);
-  font-weight: var(--h3-weight);
+  font-weight: var(--h2-weight);
   line-height: var(--h3-line);
 }
 
 h4 {
   font-size: var(--h4-size);
-  font-weight: var(--h4-weight);
+  font-weight: var(--h2-weight);
   line-height: var(--h4-line);
 }
 
 h5 {
   font-size: var(--h5-size);
-  font-weight: var(--h5-weight);
+  font-weight: var(--h2-weight);
   line-height: var(--h5-line);
 }
 
 h6 {
   font-size: var(--h6-size);
-  font-weight: var(--h6-weight);
+  font-weight: var(--h2-weight);
   line-height: var(--h6-line);
 }
 
+.button {
+  display: block;
+  width: fit-content;
+  height: 45px;
+  line-height: 45px;
+  box-sizing: border-box;
+  padding: 0 45px;
+  background-color: var(--primary);
+
+  border: none;
+  border-radius: 100px;
+  border: 1px solid var(--primary);
+  
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+
+  cursor: pointer;
+  outline: none;
+  transition-property: background-color, border, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  margin: 3px;
+}
+
+.button:hover {
+  background-color: var(--secondary-100);
+  border: 1px solid var(--secondary-100);
+}
+
+.button:active {
+  background-color: transparent;
+  color: var(--secondary-100);
+  border: 1px solid var(--secondary-100);
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px 0 150px;
+  box-sizing: border-box;
+}
+
+.hero {
+  position: relative;
+  min-height: 80vh;
+  background: url('../images/header.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+header {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+nav {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+nav, nav a {
+  font-weight: 800;
+  font-size: 14.4px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav a {
+  position: relative;
+  margin-left: 50px;
+}
+
+nav a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  left: 50%;
+  background: var(--white);
+  transition: all 200ms ease-in-out;
+}
+
+nav a:hover:after {
+  width: 80%;
+  left: 10%;
+  transition: all 100ms ease-in-out;
+}
+
+nav .phone {
+  flex-grow: 2;
+  text-align: center;
+}
+
+
+.headline {
+  margin: 149px 289px 70px 147px;
+  color: var(--white);
+  width: 852px;
+  height: 272px;
+  left: 147px;
+  top: 252px;
+}
+
+div.headline h6 {
+  position: absolute;
+  width: 226px;
+  height: 18px;
+  left: 147px;
+  top: 252px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.other-color {
+  color: var(--primary);
+}
+div.headline h1 {
+  position: absolute;
+  width: 852px;
+  height: 236px;
+  left: 147px;
+  top: 288px;
+}
+
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 833px;
+  height: 108px;
+  left: -1px;
+  top: 594px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
+  margin: 0 608px 126px 0;
+}
+div.subheader p {
+  width: 555px;
+  height: 37px;
+  left: 147px;
+  top: 629px;
+  margin: 35px 43px 36px 148px;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+div.subheader button {
+  background: rgba(196, 196, 196, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  margin: 29px 39px 31px 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.scroll p {
+  width: 272px;
+  height: 28px;
+  left: 1316px;
+  top: 240px;
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 26px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  color: var(--white);
+  margin: 240px 124px 316px 0;
+}
