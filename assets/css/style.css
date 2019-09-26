@@ -267,7 +267,6 @@ div.subheader p {
   align-items: center;
   color: var(--white);
 }
-
 div.subheader button {
   background: rgba(196, 196, 196, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -278,9 +277,15 @@ div.subheader button {
   border-radius: 50%;
 }
 
-div.scroll p {
+
+div.scrollText {
   width: 272px;
-  height: 28px;
+  height: 28px;  
+  transform: rotate(90deg);
+  color: var(--white);
+  margin: 240px 123px 245px 1150px
+}
+div.scrollText p {
   left: 1316px;
   top: 240px;
   font-weight: 800;
@@ -288,7 +293,15 @@ div.scroll p {
   line-height: 26px;
   letter-spacing: 6px;
   text-transform: uppercase;
+  /*margin: 137px 124px 0 308px;*/
+}
+div.scrollText button {
+  box-sizing: border-box;
+  background: rgba(196, 196, 196, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 21px;
+  height: 46px;
+  border-radius: 50%;
   transform: rotate(90deg);
-  color: var(--white);
-  margin: 240px 124px 316px 0;
+  margin: 23px 133px 254px 308px;
 }
